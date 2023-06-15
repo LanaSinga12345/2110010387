@@ -13,8 +13,8 @@ public class Sekolah {
     private String KodeSekolah;
     private String Nama;
     private String Alamat;
-    private String Telepon;
-    private String Fax;
+    private Integer Telepon;
+    private Integer Fax;
     private String Email;
     private String Website;
     
@@ -35,14 +35,14 @@ public class Sekolah {
         setAlamat(c);
     }
     
-    public Sekolah(String a, String b, String c, String d){
+    public Sekolah(String a, String b, String c, Integer d){
         setKodeSekolah(a);
         setNama(b);
         setAlamat(c);
         setTelepon(d);
     }
     
-    public Sekolah(String a, String b, String c, String d, String e){
+    public Sekolah(String a, String b, String c, Integer d, Integer e){
         setKodeSekolah(a);
         setNama(b);
         setAlamat(c);
@@ -50,7 +50,7 @@ public class Sekolah {
         setFax(e);
     }
     
-    public Sekolah(String a, String b, String c, String d, String e, String f){
+    public Sekolah(String a, String b, String c, Integer d, Integer e, String f){
         setKodeSekolah(a);
         setNama(b);
         setAlamat(c);
@@ -59,7 +59,7 @@ public class Sekolah {
         setEmail(f);
     }
     
-    public Sekolah(String a, String b, String c, String d, String e, String f, String g){
+    public Sekolah(String a, String b, String c, Integer d, Integer e, String f, String g){
         setKodeSekolah(a);
         setNama(b);
         setAlamat(c);
@@ -93,19 +93,19 @@ public class Sekolah {
         return this.Alamat;
     }
 
-    public void setTelepon(String d){
+    public void setTelepon(Integer d){
         this.Telepon=d;
     }
     
-    public String getTelepon(){
+    public Integer getTelepon(){
         return this.Telepon;
     }
     
-    public void setFax(String e){
+    public void setFax(Integer e){
         this.Fax=e;
     }
     
-    public String getFax(){
+    public Integer getFax(){
         return this.Fax;
     }
 
@@ -128,7 +128,7 @@ public class Sekolah {
     public String dataSekolah(){
         return getKodeSekolah()+getNama()+getAlamat()+getTelepon()+getFax()+getEmail()+getWebsite(); 
     }
-    public String dataSekolah(String a,String b,String c,String d,String e,String f,String g){
+    public String dataSekolah(String a,String b,String c,Integer d,Integer e,String f,String g){
         setKodeSekolah(a);
         setNama(b);
         setAlamat(c);

@@ -12,7 +12,7 @@ public class Guru {
     private String KodeGuru;
     private String NamaGuru;
     private String AlamatGuru;
-    private String TeleponGuru;
+    private Integer TeleponGuru;
     private String EmailGuru;
     private String StatusGuru;
     private String UserName;
@@ -37,14 +37,14 @@ public class Guru {
         setAlamatGuru(c);
     }
     
-    public Guru(String a, String b, String c, String d){
+    public Guru(String a, String b, String c, Integer d){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
         setTeleponGuru(d);
     }
     
-    public Guru(String a, String b, String c, String d, String e){
+    public Guru(String a, String b, String c, Integer d, String e){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -52,7 +52,7 @@ public class Guru {
         setEmailGuru(e);
     }
     
-    public Guru(String a, String b, String c, String d, String e, String f){
+    public Guru(String a, String b, String c, Integer d, String e, String f){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -61,7 +61,7 @@ public class Guru {
         setStatusGuru(f);
     }
     
-    public Guru(String a, String b, String c, String d, String e, String f, String g){
+    public Guru(String a, String b, String c, Integer d, String e, String f, String g){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -71,7 +71,7 @@ public class Guru {
         setUserName(g);
     }
     
-    public Guru(String a, String b, String c, String d, String e, String f, String g, String h){
+    public Guru(String a, String b, String c, Integer d, String e, String f, String g, String h){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -82,7 +82,7 @@ public class Guru {
         setPassword(h);
     }
     
-    public Guru(String a, String b, String c, String d, String e, String f, String g, String h, String i){
+    public Guru(String a, String b, String c, Integer d, String e, String f, String g, String h, String i){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -94,7 +94,7 @@ public class Guru {
         setKodeSekolah(i);
     }
     
-    public Guru(String a, String b, String c, String d, String e, String f, String g, String h, String i, String j){
+    public Guru(String a, String b, String c, Integer d, String e, String f, String g, String h, String i, String j){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);
@@ -131,11 +131,11 @@ public class Guru {
         return this.AlamatGuru;
     }
 
-    public void setTeleponGuru(String d){
+    public void setTeleponGuru(Integer d){
         this.TeleponGuru=d;
     }
     
-    public String getTeleponGuru(){
+    public Integer getTeleponGuru(){
         return this.TeleponGuru;
     }
     
@@ -190,7 +190,7 @@ public class Guru {
     public String dataGuru(){
         return getKodeGuru()+getNamaGuru()+getAlamatGuru()+getTeleponGuru()+getEmailGuru()+getStatusGuru()+getUserName()+getPassword()+getKodeSekolah()+getKodeUser(); 
     }
-    public String dataGuru(String a,String b,String c,String d,String e,String f,String g,String h,String i,String j){
+    public String dataGuru(String a,String b,String c,Integer d,String e,String f,String g,String h,String i,String j){
         setKodeGuru(a);
         setNamaGuru(b);
         setAlamatGuru(c);

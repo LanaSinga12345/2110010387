@@ -290,7 +290,7 @@ public class Absen {
     public String dataAbsen(){
         return getKodeAbsen()+getKodeGuru()+getKodePelajaran()+getTanggalJadwal()+getHariAbsen()+getRuangAbsen()+getKelasAbsen()+getJadwalMulai()+getJadwalSelesai()+getMasuk()+getCatatanMasuk()+getKeluar()+getCatatanKeluar()+getTanggalAbsen(); 
     }
-    public String dataAbsen(String a,String b,String c,String d,String e,String f,String g,String h,String i,String j, String k, String l, String m, String n){
+    public String dataAbsen(String a,String b,String c,String d,String e,String f,String g,String h,String i,String j,String k,String l,String m,String n){
         setKodeAbsen(a);
         setKodeGuru(b);
         setKodePelajaran(c);

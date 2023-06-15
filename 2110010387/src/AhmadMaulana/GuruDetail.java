@@ -10,8 +10,8 @@ package AhmadMaulana;
  */
 public class GuruDetail {
     
-    private String KodeGuru;
-    private String KodePelajaran;
+    private Integer KodeGuru;
+    private Integer KodePelajaran;
     private String Hari;
     private String Ruang;
     private String Kelas;
@@ -22,29 +22,29 @@ public class GuruDetail {
     
     public GuruDetail() {}
     
-    public GuruDetail(String a){
+    public GuruDetail(Integer a){
         setKodeGuru(a);
     }
     
-    public GuruDetail(String a, String b){
+    public GuruDetail(Integer a, Integer b){
         setKodeGuru(a);
         setKodePelajaran(b);
     }
     
-    public GuruDetail(String a, String b, String c){
+    public GuruDetail(Integer a, Integer b, String c){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
     }
     
-    public GuruDetail(String a, String b, String c, String d){
+    public GuruDetail(Integer a, Integer b, String c, String d){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
         setRuang(d);
     }
     
-    public GuruDetail(String a, String b, String c, String d, String e){
+    public GuruDetail(Integer a, Integer b, String c, String d, String e){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
@@ -52,7 +52,7 @@ public class GuruDetail {
         setKelas(e);
     }
     
-    public GuruDetail(String a, String b, String c, String d, String e, String f){
+    public GuruDetail(Integer a, Integer b, String c, String d, String e, String f){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
@@ -61,7 +61,7 @@ public class GuruDetail {
         setJamMulai(f);
     }
     
-    public GuruDetail(String a, String b, String c, String d, String e, String f, String g){
+    public GuruDetail(Integer a, Integer b, String c, String d, String e, String f, String g){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
@@ -71,7 +71,7 @@ public class GuruDetail {
         setJamSelesai(g);
     }
     
-    public GuruDetail(String a, String b, String c, String d, String e, String f, String g, String h){
+    public GuruDetail(Integer a, Integer b, String c, String d, String e, String f, String g, String h){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
@@ -82,7 +82,7 @@ public class GuruDetail {
         setTanggalMulai(h);
     }
     
-    public GuruDetail(String a, String b, String c, String d, String e, String f, String g, String h, String i){
+    public GuruDetail(Integer a, Integer b, String c, String d, String e, String f, String g, String h, String i){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
@@ -94,19 +94,19 @@ public class GuruDetail {
         setJumlahPertemuan(i);
     }
         
-    public void setKodeGuru(String a){
+    public void setKodeGuru(Integer a){
         this.KodeGuru=a;
     }
     
-    public String getKodeGuru(){
+    public Integer getKodeGuru(){
         return this.KodeGuru;
     }
     
-    public void setKodePelajaran(String b){
+    public void setKodePelajaran(Integer b){
         this.KodePelajaran=b;
     }
     
-    public String getKodePelajaran(){
+    public Integer getKodePelajaran(){
         return this.KodePelajaran;
     }
     
@@ -169,7 +169,7 @@ public class GuruDetail {
     public String dataDetailGuru(){
         return getKodeGuru()+getKodePelajaran()+getHari()+getRuang()+getKelas()+getJamMulai()+getJamSelesai()+getTanggalMulai()+getJumlahPertemuan(); 
     }
-    public String dataDetailGuru(String a,String b,String c,String d,String e,String f,String g,String h,String i){
+    public String dataDetailGuru(Integer a,Integer b,String c,String d,String e,String f,String g,String h,String i){
         setKodeGuru(a);
         setKodePelajaran(b);
         setHari(c);
